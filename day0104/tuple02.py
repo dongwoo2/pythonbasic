@@ -12,5 +12,5 @@ print(people[2][2])
 sorted_people = sorted(people, key = lambda x:x[1])
 
 for person in sorted_people:
-    name,age,gender = person
+    name,age,gender = person # 정렬된 person을 언패킹
     print(f"{name} is {age} years old and {gender}.")
