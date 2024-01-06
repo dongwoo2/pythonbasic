@@ -5,7 +5,7 @@ def freq_input(filename):
     return data
 
 def freq_print(freq, limit, reverse=True): # 프린트 하는 함수 리버스라는 매개변수 하나 맘들어서 오름차순,내림차순 할 수 있게
-    freq = sorted(freq.items(), key = lambda x:x[1], reverse=reverse)
+    freq = sorted(freq.items(), key = lambda x:x[1], reverse=reverse) # 람다부분은 freq의 두번째 요소를 기준으로 정렬을 한다
     for idx in range(0, limit):
         print(f'[{freq[idx][0]:2}]번:({freq[idx][1]:2})회')
 
